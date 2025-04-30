@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PulsAI - Health Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🌿 PulsAI: Your Health Companion</h1>
+
+    <section>
+        <h2>🩺 Track Your Health Habits</h2>
+        <ul>
+            {% for habit in habits %}
+            <li>{{ habit.name }} - {{ habit.description }}</li>
+            {% endfor %}
+        </ul>
+
+        <button>Track Habit</button>
+        <button>Analyze with AI</button>
+        <button>Get Health Report</button>
+    </section>
+
+    <section>
+        <h2>🧬 Common Illnesses</h2>
+        <p>Here you can display illnesses info later...</p>
+    </section>
+
+    <section>
+        <h2>📊 Health Chart</h2>
+        <img src="/static/chart-placeholder.png" alt="Health Chart">
+    </section>
+</body>
+</html>
